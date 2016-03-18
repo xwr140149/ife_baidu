@@ -1,0 +1,169 @@
+
+
+.head{
+	background-color: black;
+	height: 60px;
+	border-bottom: 10px;
+	border-style: solid;
+	border-color: #ccc;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	position: relative;
+}
+
+.midlle{
+
+	border-width:10px 20px;
+	border-style: solid;;
+	border-color: #ccc;
+	padding:20px;
+
+
+}
+
+.down{
+	color:white;
+	background-color: black;
+	border-top: 10px;
+	border-style: solid;
+	border-color: #ccc;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	height: 60px;
+	
+}
+
+.a{
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+.a-center{
+	position: relative;
+	left: -50%;
+}
+
+
+.img{
+	width: 150px;
+	height: 55px;
+	float: left;
+	position: relative;
+	left: 5%;
+}
+
+
+.li{
+	width:550px;
+	height: 55px;
+	float: right;
+}
+
+
+.head-li li{
+	float: left;
+	margin:0 20px;
+	color: #fff;
+
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.list-style li{
+	list-style-type: none;
+}
+
+
+.center {
+
+	margin:10px ;
+	width: 330px;
+	height: 300px;
+	border:2px solid #ccc;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+
+
+
+.table-style{
+	width:1300px;
+	border-collapse: collapse;
+}
+
+.table-style tr{
+	height: 30px;
+}
+
+.table-style tr th{
+	background-color: #010;
+	color: #fff;
+}
+
+.td-style{
+	background-color: #ccc;
+}
+
+.celan-title{
+	height: 58px;
+	width: 3px;
+	padding: 2px;
+	background-color: #ccc;
+	float: left;
+}
+
+.celan-title h2{
+	width: 1000px;
+	float: left;
+}
+
+
+/*.for-form-style{
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+.form-style{
+	position: relative;
+	left: -50%;
+}*/
+
+
+.tip{
+	padding-left: 498px;
+	margin-top: 8px;
+	color: #ccc;
+}
+
+
+.label-style{
+	float: left;
+	width: 77px;
+	padding-left: 428px;
+}
+
+
+.submit-style{
+	width: 1325px;
+	height: 50px;
+	background-color: #4411fc;
+	color: #fff;
+	border-radius:10px;
+}
+
+
+
+
+.label-style1{
+	padding-left: 454px;
+
+}
