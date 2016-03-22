@@ -1,0 +1,52 @@
+body{margin:0px;padding: 20px;}
+
+.head{
+	min-width: 600px;
+	background: #eee;
+	padding: 20px;
+	margin:0 auto;
+	overflow: auto;
+	border:1px solid #ecc;
+}
+
+
+img{
+	width: 80px;
+	height: 80px;
+}
+
+.left{
+	width: 160px;
+	padding:20px;
+	float: left;
+	background: #fff;
+	border:1px solid #cce;
+}
+
+.left img{
+	float: left;
+}
+
+.left p {
+	text-align: center;
+}
+
+.middle{
+padding:20px;
+margin-right: 140px;
+margin-left: 220px;
+background: #fff;
+	border:1px solid #cce;
+}
+
+.right{
+	width:120px;
+	float: right;
+	background: #fff;
+	border:1px solid #cce;
+}
+
+.right img{
+	margin:10px 20px;
+}
+
