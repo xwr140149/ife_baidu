@@ -1,0 +1,34 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+.wrap{
+	width:400px;
+	height:200px;
+	background:#ccc;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-100px;
+	overflow: hidden;
+}
+
+.corner{
+	position: absolute;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background:#fc0;
+}
+
+.top-corner{
+	left: -50px;
+	top:-50px;
+}
+
+.bottom-corner{
+	right: -50px;
+	bottom:-50px;
+}
