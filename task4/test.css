@@ -1,0 +1,41 @@
+img{
+	width: 80px;
+	height: 80px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.a{
+	/*position: relative;*/
+	background: #eee;
+	width: 95%
+	margin:0 auto;
+}
+
+
+.b{
+	width:200px;
+	height: 150px;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.c{
+	background: #fff;
+	border: 1px solid #ccc;
+	margin:20px 150px 20px 250px;
+}
+
+.d{
+	background: #fff;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 120px
+	border: 1px solid #ccc;
+}
+
+.clearfloat{clear:both;height:0;font-size: 1px;line-height: 0px;} 
