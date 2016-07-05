@@ -1,0 +1,58 @@
+/*CSS初始化 B*/
+/*html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{
+	margin:0;
+	padding:0;
+}*/
+html,body,ul,li,p,h1,h2,h3,img,input{
+	margin:0;
+	padding:0;
+}
+/*清除img的边框*/
+img{
+	boeder:0;
+}
+/*清除列表前面的点*/
+ul {
+	list-style: none;
+}
+
+body{
+	font-size: 12px;
+	color:#434343;
+	font-family: "宋体";
+	background: #fff;
+}
+/*清除浮动*/
+.clearfix:after{
+	content:"";
+	height:0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear:both;
+}
+
+.clearfix{
+	zoom:1;
+}
+
+/*去掉a标签的颜色和下划线*/
+a{
+	color: #434343;
+	text-decoration: none;
+}
+
+a:hover{
+	color: green;
+}
+
+/*左右浮动*/
+.fl{
+	float: left;
+}
+
+.fr{
+	float:right;
+}
+
+/*CSS初始化 E*/

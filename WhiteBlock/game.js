@@ -109,7 +109,7 @@ function isgameover(){
     //停止游戏的计时器
     clearTimeout(t);
     //游戏结束的提示
-    $("#box_container").append("<div id='gameover' class='gameover'><p>本次用时</p><span>" + timerun.toString().substr(0,5) + "秒</span><a href='javascript:restartgame();' id='restartgamebutton'>Restart</a></div>");
+    $("#box_container").append("<div id='gameover' class='gameover'><p>本局共得</p><span>" + score + "分</span><a href='javascript:restartgame();' id='restartgamebutton'>Restart</a></div>");
     var gameover = $("#gameover");
     gameover.css("width", "300px");
     gameover.css("height", "400px");
