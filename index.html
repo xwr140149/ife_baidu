@@ -2,37 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>心灵捕手</title>
 	<link rel="stylesheet" href="CSS/common.css">
 	<link rel="stylesheet" href="CSS/css.css">
+	<link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
 <body>
-	<!-- top部分          B -->
-	<div class="top">
-		<div class="t_center banxin">
-			<div class="t_c_wel fl">您好！欢迎来到喵星星的Task</div>
-			<div class="t_c_nav fr">
+	<!--头部 菜单-->
+	<div class="head_box">
+		<div class="head">
+			<h1><img src="img/logo.png"  /></h1>
+			<div class="head_login">
 				<ul>
-					<li><a href="#">导航1</a></li>
-					<li><a href="#">导航2</a></li>
-					<li><a href="#">导航3</a></li>
-					<li><a href="#">导航4</a></li>
-					<li><a href="#">导航5</a></li>
-					<li><a href="#">导航6</a></li>
+					<li><a href="javascript:void(0)" class="btn_login" id="login">登录</a></li>
+					<li><a href="javascript:void(0)" class="btn_register">注册</a></li>
+				</ul>
+			</div>
+			<div class="head_r">
+				<ul class="menu">
+					<li class="on"><a href="2048/index.html" target="_blank">2048</a></li>
+					<li><a href="WhiteBlock/index.html" target="_blank">别踩白块</a></li>
+					<li><a href="小功能/旋转木马.html" target="_blank">旋转木马</a></li>
+					<li><a href="小功能/手风琴.html" target="_blank">手风琴</a></li>
+					<li><a href="ColorfulWorld.html" target="_blank">真我世界</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<!-- top部分          E -->
-	<!-- logo              B -->
-	<div class="logo banxin">
-		<div class="l_left fl"></div>
-		<div class="l_search fr">
-			<input class="inp fl" type="text" value="请输入关键字">
-			<input class="btn fl" type="button" value="搜索">
+	<!--头部 菜单 end--> 
+
+	<!-- 大图轮播   B -->
+	<div class="all" id='box'>
+		<div class="screen">
+			<ul>
+				<li><img src="img/6.jpg" width="1423px" height="670px" /></li>
+				<li><img src="img/7.jpg" width="1423px" height="670px" /></li>
+				<li><img src="img/8.jpg" width="1423px" height="670px" /></li>
+				<li><img src="img/9.jpg" width="1423px" height="670px" /></li>
+				<li><img src="img/10.jpg" width="1423px" height="670px" /></li>
+
+			</ul>
+			<ol>
+				<!-- 动态创建的小方块，添加在这里，样式已经给写好了-->
+			</ol>
 		</div>
+		<div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
 	</div>
-	<!-- logo              E -->
+	<!-- 大图轮播    E -->
 	<!-- nav          B -->
 	<div class="nav banxin">
 		<ul>
@@ -43,6 +59,7 @@
 		</ul>
 	</div>
 	<!-- nav          E -->
+
 	<!-- news        B -->
 	<div class="news banxin clearfix">
 		<div class="n_left fl">
@@ -56,19 +73,9 @@
 				<li><b></b><a href="#">个人说明6</a></li>
 			</ul>
 		</div>
-		<!-- <div class="n_center fl">
-			<div class="n_c_bottom">
-				<ul class="fr">
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-				</ul>
-			</div>
-		</div> -->
-
-		<!-- 图片轮播    B -->
-		<div id="banner_tabs" class="flexslider fl">
+<!-- news        E -->
+<!-- 图片轮播    B -->
+<div id="banner_tabs" class="flexslider fl">
 	<ul class="slides">
 		<li>
 			<a title="" target="_blank" href="#">
@@ -99,140 +106,186 @@
 
 
 <!-- 图片轮播    E -->
-		<div class="n_right fr">
-			<div class="n_r_t">
-				<h3>牛刀小试</h3>
-				<div class="n_r_t_mess">
-					<b></b>
-					<span>lallalalallabalalallallala <br><a href="#">查看详情</a></span>
+<div class="n_right fr">
+	<div class="n_r_t">
+		<h3>牛刀小试</h3>
+		<div class="n_r_t_mess">
+			<b></b>
+			<span>lallalalallabalalallallala <br><a href="#">查看详情</a></span>
+		</div>
+	</div>
+	<div class="n_r_b">
+		<p class="message">zzzzzzzzz</p>
+		<p class="phone"><b></b>zzzzzzz</p>
+		<input type="button" class="btn" value="用户留言">
+	</div>
+</div>
+</div>
+<!-- news           E -->
+<div class="meate banxin">JS小游戏</div>
+<!-- 商品信息                 B -->
+<div class="goods banxin">
+	<div class="left fl">
+		<div class="g_l_t">
+			<div class="g_l_t_mess fl">
+				<div class="iimg fl">
+					<div class="iimg_img">
+						<b class="one"></b>
+					</div>
+					<!-- <input type="button" class="bbtn" value="Play"> -->
+					<a href="2048/index.html" class="bbtn" target="_blank">Play</a>
+				</div>
+				<div class="mmes fr">
+					<p class="one">网页版2048小游戏</p>
+					<p class="two">原版2048首先在github上发布，原作者是<b>Gabriele Cirulli</b>。<br>它是基于《1024》和《小3传奇》的玩法开发而成的新型数字游戏。</p>
+					<p class="three"><span>239.00</span> &nbsp; &nbsp; &nbsp;<del>$384.00</del></p>
+					<p class="four">限量<span>99</span>&nbsp;已售出<span>2</span>件</p>
 				</div>
 			</div>
-			<div class="n_r_b">
-				<p class="message">zzzzzzzzz</p>
-				<p class="phone"><b></b>zzzzzzz</p>
-				<input type="button" class="btn" value="用户留言">
+			<div class="g_l_t_mess fl">
+				<div class="iimg fl">
+					<div class="iimg_img">
+						<b class="two"></b>
+					</div>
+					<a href="WhiteBlock/index.html" class="bbtn" target="_blank">Play</a>
+				</div>
+				<div class="mmes fr">
+					<p class="one">网页版别踩白块</p>
+					<p class="two">* 作为玩家心态：<br>&nbsp;&nbsp;如何将游戏玩得更好<br>* 作为开发人员心态 <br>&nbsp;&nbsp;游戏逻辑：站在对方开发人员的角度</p>
+					<p class="three"><span>139.00</span> &nbsp; &nbsp; &nbsp;<del>$2.00</del></p>
+					<p class="four">限量<span>199</span>&nbsp;已售出<span>122</span>件</p>
+				</div>
+			</div>
+		</div>
+		<div class="g_l_t btop">
+			<div class="g_l_t_mess fl">
+				<div class="iimg fl">
+					<div class="iimg_img">
+						<b></b>
+					</div>
+					<a href="小功能/旋转木马.html" class="bbtn" target="_blank">Play</a>
+				</div>
+				<div class="mmes fr">
+					<p class="one">旋转木马</p>
+					<p class="two">safe &nbsp; auto <br> wending &nbsp; kyhq</p>
+					<p class="three"><span>239.00</span> &nbsp; &nbsp; &nbsp;<del>$384.00</del></p>
+					<p class="four">限量<span>99</span>&nbsp;已售出<span>2</span>件</p>
+				</div>
+			</div>
+			<div class="g_l_t_mess fl">
+				<div class="iimg fl">
+					<div class="iimg_img">
+						<b></b>
+					</div>
+					<a href="小功能/手风琴.html" class="bbtn" target="_blank">Play</a>
+				</div>
+				<div class="mmes fr">
+					<p class="one">手风琴</p>
+					<p class="two">safe &nbsp; auto <br> wending &nbsp; kyhq</p>
+					<p class="three"><span>239.00</span> &nbsp; &nbsp; &nbsp;<del>$384.00</del></p>
+					<p class="four">限量<span>99</span>&nbsp;已售出<span>2</span>件</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<!-- news           E -->
-	<div class="meate banxin">JS小游戏</div>
-	<!-- 商品信息                 B -->
-		<div class="goods banxin">
-			<div class="left fl">
-				<div class="g_l_t">
-					<div class="g_l_t_mess fl">
-						<div class="iimg fl">
-							<div class="iimg_img">
-								<b class="one"></b>
-							</div>
-							<!-- <input type="button" class="bbtn" value="Play"> -->
-							<a href="http://xwr140149.github.io/ife_baidu/2048/" class="bbtn" target="_blank">Play</a>
-						</div>
-						<div class="mmes fr">
-							<p class="one">网页版2048小游戏</p>
-							<p class="two">原版2048首先在github上发布，原作者是<b>Gabriele Cirulli</b>。<br>它是基于《1024》和《小3传奇》的玩法开发而成的新型数字游戏。</p>
-							<p class="three"><span>239.00</span> &nbsp; &nbsp; &nbsp;<del>$384.00</del></p>
-							<p class="four">限量<span>99</span>&nbsp;已售出<span>2</span>件</p>
-						</div>
-					</div>
-					<div class="g_l_t_mess fl">
-						<div class="iimg fl">
-							<div class="iimg_img">
-								<b class="two"></b>
-							</div>
-							<a href="http://xwr140149.github.io/ife_baidu/WhiteBlock/" class="bbtn" target="_blank">Play</a>
-						</div>
-						<div class="mmes fr">
-							<p class="one">网页版别踩白块</p>
-							<p class="two">* 作为玩家心态：<br>&nbsp;&nbsp;如何将游戏玩得更好<br>* 作为开发人员心态 <br>&nbsp;&nbsp;游戏逻辑：站在对方开发人员的角度</p>
-							<p class="three"><span>139.00</span> &nbsp; &nbsp; &nbsp;<del>$2.00</del></p>
-							<p class="four">限量<span>199</span>&nbsp;已售出<span>122</span>件</p>
-						</div>
-					</div>
+	<div class="right fr">
+		<h3 class="zixun">JS小应用</h3>
+		<ul>
+			<li><b></b><a href="car/index.html" target="_blank">汽车简介</a></li>
+			<li><b></b><a href="picture/index.html" target="_blank">图片瀑布流(懒加载)</a></li>
+			<li><b></b><a href="ColorfulWorld.html" target="_blank">真我世界</a></li>
+			<li><b></b><a href="小功能/轮播图.html" target="_blank">JS原生轮播图</a></li>
+			<li><b></b><a href="小功能/旋转木马.html" target="_blank">旋转木马</a></li>
+			<li><b></b><a href="小功能/手风琴.html" target="_blank">手风琴</a></li>
+			<li><b></b><a href="小功能/tab切换.html" target="_blank">目录切换</a></li>
+			<li><b></b><a href="小功能/鼠标跟随.html" target="_blank">鼠标跟随</a></li>
+			<li><b></b><a href="小功能/拖拽.html" target="_blank">拖拽</a></li>
+			<li><b></b><a href="小功能/微博发布.html" target="_blank">微博发布</a></li>
+			<li><b></b><a href="小功能/选水果.html" target="_blank">选水果</a></li>
+			<li><b></b><a href="小功能/验证.html" target="_blank">验证表单</a></li>
+		</li>
+	</ul>
+</div>
+</div>
+<!-- 商品信息                      E -->
+<!-- friend                       B -->
+<div class="friend banxin">友情链接：
+	<!-- <div class="f_top">友情链接： -->
+	<ul>
+		<li><a href="https://github.com/missXing" target="_blank">Github</a></li>
+		<li><a href="http://weibo.com/u/2466022431" target="_blank">微博</a></li>
+		<li><a href="http://www.zhihu.com/people/xwr140149" target="_blank">知乎</a></li>
+		<li><a href="http://missxing.github.io/" target="_blank">博客</a></li>
+	</ul> 
+	<!-- </div> -->
+</div>
+
+<!-- friend                             E -->
+<div class="foot banxin">
+	<ul>
+		<li><a href="#">Hello1</a> |</li>
+		<li><a href="#">Hello2</a> |</li>
+		<li><a href="#">Hello3</a> |</li>
+		<li><a href="#">Hello4</a> |</li>
+		<li><a href="#">Hello5</a> |</li>
+		<li><a href="#">Hello6</a> |</li>
+		<li><a href="#">Hello7</a> |</li>
+		<li><a href="#">Hello8</a> |</li>
+		<li><a href="#">Hello9</a> |</li>
+		<li><a href="#">Hello10</a></li><br>
+		<li><a href="http://missxing.github.io/" target="_blank">喵星星的Task&nbsp;版权所有2016&nbsp;请联系我 MissXing.github.io</a></li><br>
+		<li><a href="#">请联系我 526621047@qq.com</a></li>
+
+	</ul>
+
+	<!--登陆弹窗-->
+	<div id="tanchuang">
+		<div id="AmodLoginmask"></div>
+		<div id="AmodLoginbox">
+			<div class="panel login_panel" id="loginPanel" style="display: block; ">
+				<div class="header fix">
+					<h2>登录</h2>
+					<span class="note">无帐号也可用手机号直接登录哦</span>
 				</div>
-				<div class="g_l_t btop">
-					<div class="g_l_t_mess fl">
-						<div class="iimg fl">
-							<div class="iimg_img">
-								<b></b>
-							</div>
-							<a href="http://xwr140149.github.io/ife_baidu/2048/" class="bbtn" target="_blank">Play</a>
-						</div>
-						<div class="mmes fr">
-							<p class="one">good wife &nbsp; good girl &nbsp; good boy</p>
-							<p class="two">safe &nbsp; auto <br> wending &nbsp; kyhq</p>
-							<p class="three"><span>239.00</span> &nbsp; &nbsp; &nbsp;<del>$384.00</del></p>
-							<p class="four">限量<span>99</span>&nbsp;已售出<span>2</span>件</p>
+				<form class="form" method="post">
+					<div class="clear">&nbsp;</div>
+					<div class="tr input_wrap loginname_wrap" id="loginname_wrap">
+					<input type="text" required="required" title="别忘了手机号或邮箱" class="loginname" name="loginname" id="loginname" >
+						<span class="placeholder" id="loginPlaceholder">手机号码或者邮箱地址</span>
+						<span class="loginTips">请输入正确的手机号或邮箱</span>
+					</div>
+					<div class="tr input_wrap password_wrap">
+						<div class="password_wrap1">
+							<input required="required" title="别忘了密码" type="password" class="password" name="password1" id="password1" >
+							<span class="placeholder" style="" id="password2">密码</span>
 						</div>
 					</div>
-					<div class="g_l_t_mess fl">
-						<div class="iimg fl">
-							<div class="iimg_img">
-								<b></b>
-							</div>
-							<a href="http://xwr140149.github.io/ife_baidu/2048/" class="bbtn" target="_blank">Play</a>
-						</div>
-						<div class="mmes fr">
-							<p class="one">good wife &nbsp; good girl &nbsp; good boy</p>
-							<p class="two">safe &nbsp; auto <br> wending &nbsp; kyhq</p>
-							<p class="three"><span>239.00</span> &nbsp; &nbsp; &nbsp;<del>$384.00</del></p>
-							<p class="four">限量<span>99</span>&nbsp;已售出<span>2</span>件</p>
-						</div>
+					<div class="tr submit_wrap">
+						<input class="submit" type="submit" value="登 录">
 					</div>
+					<ul class="quick_nav fix">
+						<li class="first">
+							<input type="checkbox" name="remember" class="common_chk" value="true">自动登录
+						</li>
+						<li>
+							<a href="" target="_blank" class="forget">忘记密码</a>
+						</li>
+						<li class="last">
+							<a class="go_reg" href="#">免费注册</a>
+						</li>
+					</ul>
+				</form>
+				<div class="close" id="AmodLoginboxclose"><img src="img/close.png" width="25" height="25"/>
 				</div>
-			</div>
-			<div class="right fr">
-				<h3 class="zixun">JS小应用</h3>
-				<ul>
-					<li><b></b><a href="http://xwr140149.github.io/ife_baidu/car/" target="_blank">汽车简介</a></li>
-					<li><b></b><a href="http://xwr140149.github.io/ife_baidu/picture/" target="_blank">图片瀑布流(懒加载)</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行3</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行4</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行5</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行6</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行7</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行8</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行9</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行10</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行11</a></li>
-					<li><b></b><a href="#" target="_blank">北京交通银行12</a></li>
-				</ul>
 			</div>
 		</div>
-	<!-- 商品信息                      E -->
-	<!-- friend                       B -->
-	<div class="friend banxin">友情链接：
-		<!-- <div class="f_top">友情链接： -->
-		<ul>
-			<li><a href="https://github.com/missXing" target="_blank">Github</a></li>
-			<li><a href="http://weibo.com/u/2466022431" target="_blank">微博</a></li>
-			<li><a href="http://www.zhihu.com/people/xwr140149" target="_blank">知乎</a></li>
-			<li><a href="http://missxing.github.io/" target="_blank">博客</a></li>
-		</ul> 
-		<!-- </div> -->
 	</div>
-
-	<!-- friend                             E -->
-	<div class="foot banxin">
-		<ul>
-			<li><a href="#">Hello1</a> |</li>
-			<li><a href="#">Hello2</a> |</li>
-			<li><a href="#">Hello3</a> |</li>
-			<li><a href="#">Hello4</a> |</li>
-			<li><a href="#">Hello5</a> |</li>
-			<li><a href="#">Hello6</a> |</li>
-			<li><a href="#">Hello7</a> |</li>
-			<li><a href="#">Hello8</a> |</li>
-			<li><a href="#">Hello9</a> |</li>
-			<li><a href="#">Hello10</a></li><br>
-			<li><a href="http://missxing.github.io/" target="_blank">喵星星的Task&nbsp;版权所有2016&nbsp;请联系我 MissXing.github.io</a></li><br>
-			<li><a href="#">请联系我 526621047@qq.com</a></li>
-
-		</ul>
+	<!--end  登陆弹窗-->
 
 	<script src="JS/jquery-1.10.2.min.js"></script>
 	<script src="JS/slider.js"></script>
 	<script src="JS/js.js"></script>
-	</div>
+	<script src="JS/index.js"></script>
+</div>
 </body>
 </html>
