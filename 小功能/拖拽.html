@@ -67,8 +67,9 @@
 <script>
     //首先获取页面元素
     var box = document.getElementById("d_box");
+     var box1 = document.getElementById("drop");
     //点住盒子时，获取鼠标在盒子内的位置
-    box.onmousedown = function (e) {
+    box1.onmousedown = function (e) {
         //获取鼠标在盒子内的位置
         var x = e.clientX - box.offsetLeft;
         var y = e.clientY - box.offsetTop;
